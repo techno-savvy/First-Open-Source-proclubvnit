@@ -31,6 +31,19 @@ void PrintMatrix(int r,int c,int Matrix[][c])
     }
     
 }
+void add0(int r,int c,int Matrix[][c])
+{
+    int i,j;
+    for(i=0;i<r;i++)
+    {for(j=0;j<c;j++)
+    {
+        Matrix[i][j]=0;
+    }
+     printf("\n");
+    }
+}
+        
+
 void ReadMatrix(int r,int c,int Matrix[][c])
 {  int i,j;
    for(i=0;i<r;i++)
@@ -98,6 +111,9 @@ int main(){
                             break;
             case POWER:
                             Power();//ask not only for matrix but also the power to which it should be raised
+                            break;
+            case add0:
+                            add0();
                             break;
         }
 
