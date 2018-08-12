@@ -36,6 +36,7 @@ void ReadMatrix(int r,int c,int Matrix[][c])
    for(i=0;i<r;i++)
    {for(j=0;j<c;j++)
      {scanf("%d",&Matrix[i][j]);
+      printf(" hello ");
       } 
     }
  }
